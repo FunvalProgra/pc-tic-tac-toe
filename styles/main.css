@@ -62,6 +62,7 @@ header>button>.icon {
 .board_item {
     background-color: var(--board-bg-clr);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px, rgba(0, 0, 0, 0.3) 0px 0px 0px -3px, rgba(0, 0, 0, 0.2) 0px 8px 0px;
+    cursor: pointer;
 }
 
 .score_item-o,
@@ -101,8 +102,33 @@ header>button>.icon {
     height: 40%;
     width: 40%;
 }
+
 .icon.circle {
     fill: var(--yellow);
     height: 50%;
     width: 50%;
+}
+
+.modal-content {
+    background-color: var(--board-bg-clr);
+    border-radius: 0;
+}
+
+.modal-content .winner {
+    fill: var(--cyan);
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.modal-action>button:nth-child(1) {
+    background-color: var(--off-white);
+    font-size: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 4px, rgba(0, 0, 0, 0.7) 0px 0px 0px -3px, rgb(168, 190, 201, .5) 0px 3px 0px;
+}
+
+.modal-action>button:nth-child(2) {
+    background-color: var(--yellow);
+    font-size: .8rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1px, rgba(0, 0, 0, 0.5) 0px 0px 0px -2px, rgb(254, 180, 43, .5) 0px 3px 0px;
+
 }
